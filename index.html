@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的简单网站</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 欢迎来到我的网站！</h1>
+    <div class="info">
+        <p>这是一个使用 GitHub Pages 免费托管的简单页面。</p>
+        <p>你可以修改这段文字，替换成你自己的内容。</p>
+        <p>想要绑定自己的域名？参考 Cloudflare 的设置步骤吧！</p>
+        <p>👉 <a href="https://docs.github.com/zh/pages" target="_blank">查看 GitHub Pages 官方文档</a></p>
+    </div>
+    <hr>
+    <p>🌐 当前时间：<span id="time"></span></p>
+    <script>
+        // 显示当前时间（简单示例）
+        function updateTime() {
+            document.getElementById('time').textContent = new Date().toLocaleString('zh-CN');
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
