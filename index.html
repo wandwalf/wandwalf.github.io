@@ -61,6 +61,7 @@ body {
   border-radius: 12px;
   padding: 20px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .card:hover {
   transform: translateY(-4px);
@@ -100,33 +101,39 @@ body {
 </style>
 </head>
 <body>
+
 <div class="panel">
   <h1 class="title">SYSTEM CONTROL PANEL</h1>
   <p class="subtitle">二级域名 · 科技感控制面板</p>
 
   <div class="grid">
-    <div class="card">
+    <div class="card" onclick="alert('状态：系统正常运行 ✅')">
       <h3>STATUS</h3>
       <p>在线 · 安全运行</p>
     </div>
-    <div class="card">
+    <div class="card" onclick="alert('域名：已正常解析 ✅')">
       <h3>DOMAIN</h3>
       <p>二级域名已解析</p>
     </div>
-    <div class="card">
+    <div class="card" onclick="alert('CDN：Cloudflare 加速中 ✅')">
       <h3>CDN</h3>
       <p>Cloudflare 已加速</p>
     </div>
-    <div class="card">
+    <div class="card" onclick="alert('用户：欢迎管理员 ✅')">
       <h3>USER</h3>
       <p>管理员已登录</p>
     </div>
   </div>
 
   <div class="btn-group">
-    <button class="btn">控制面板</button>
-    <button class="btn">系统信息</button>
+    <button class="btn" onclick="alert('打开控制面板 → 功能开发中')">控制面板</button>
+    <button class="btn" onclick="alert('系统信息：运行正常')">系统信息</button>
   </div>
 </div>
+
+<script>
+// 现在点了都会弹提示，真的有反应！
+</script>
+
 </body>
 </html>
