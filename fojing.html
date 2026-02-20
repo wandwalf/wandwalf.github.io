@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>佛经大全</title>
+<style>
+* {
+  margin:0; padding:0; box-sizing:border-box;
+}
+body {
+  background:#0b1020;
+  color:#eaf5ff;
+  font-family:微软雅黑, sans-serif;
+  padding:30px 20px;
+}
+.container {
+  max-width:800px;
+  margin:0 auto;
+}
+h1 {
+  text-align:center;
+  color:#00d1ff;
+  margin-bottom:30px;
+  text-shadow:0 0 10px #00aaff;
+}
+.book-list {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:20px;
+}
+.book-item {
+  background:rgba(22,35,65,0.8);
+  border:1px solid #2a4d88;
+  border-radius:12px;
+  padding:20px;
+  text-align:center;
+  cursor:pointer;
+  transition:0.3s;
+}
+.book-item:hover {
+  border-color:#00aaff;
+  box-shadow:0 0 20px #00aaff33;
+}
+.book-item img {
+  width:100px;
+  height:140px;
+  object-fit:cover;
+  border-radius:6px;
+  margin-bottom:12px;
+}
+.book-item h3 {
+  color:#9cefef;
+  font-size:16px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <h1>佛经大全</h1>
+
+  <div class="book-list">
+
+    <div class="book-item" onclick="window.open('https://www.example.com/dabeizhou.pdf','_blank')">
+      <img src="https://picsum.photos/100/140?1">
+      <h3>大悲咒</h3>
+    </div>
+
+    <div class="book-item" onclick="window.open('https://www.example.com/xinjing.pdf','_blank')">
+      <img src="https://picsum.photos/100/140?2">
+      <h3>般若心经</h3>
+    </div>
+
+    <div class="book-item" onclick="window.open('https://www.example.com/jingangjing.pdf','_blank')">
+      <img src="https://picsum.photos/100/140?3">
+      <h3>金刚经</h3>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
